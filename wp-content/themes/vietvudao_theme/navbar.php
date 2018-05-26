@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="index.php">Việt vũ Đạo Villeurbanne</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,20 +29,12 @@
           <a class="dropdown-item" href="/wordpress/presentation">Présentation</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/wordpress/ceintures">Les ceintures noires</a>
+          <a class="dropdown-item" href="/wordpress/quyens">Les quyêns</a>
+          <a class="dropdown-item" href="/wordpress/events">Événements</a>
           <a class="dropdown-item" href="/wordpress/reglement">Règlement</a>
         </div>
       </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Photos et vidéos
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/wordpress/presentation">Cours</a>
-          <a class="dropdown-item" href="armes.php">Stages</a>
-          <a class="dropdown-item" href="quyens.php">Démonstrations</a>
-          <a class="dropdown-item" href="quyens.php">Compétitions</a>
-        </div>
-      </li>
+        <a class="nav-link" href="/wordpress/album">Album</a>
         <a class="nav-link" href="/wordpress/contact">Nous contacter</a>
       </li>
       </ul>

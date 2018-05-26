@@ -8,21 +8,7 @@
  */
 get_header();
 ?>
-
-  <title>Contact</title>
-
-  <!-- Custom styles for this template -->
-  <style>
-    body {
-      padding-top: 54px;
-    }
-    @media (min-width: 992px) {
-      body {
-        padding-top: 56px;
-      }
-    }
-
-  </style>
+<title>Contact</title>
 
 <div class="container">
   <div class="col-lg-12 text-center">
@@ -42,14 +28,40 @@ get_header();
   </form>
 </div>
 
+</br>
+
 <div class="container">
-  <div class="row"></div>
-    <div class="col-lg-12 text-center">
-      <h2 class="mt-5">Nos coordonnées</h2>
-      <p class="text-justify text-center">51 rue La fontaine 69100 VILLEURBANNE</p>
-      <p class="text-justify text-center">06 68 08 41 98</p>
-      <p class="text-justify text-center">06 74 36 49 29</p>
-    </div>
-  </div>
+<?php
+  $id = get_the_ID();
+  $post = get_post($id);
+  $content = apply_filters('the_content', $post->post_content);
+  echo $content;
+?>
+  <!-- div de google maps -->
+  <div id="map"></div>
 </div>
+
+<style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+    <script>
+      function initMap() {
+        var club = {lat: 45.759909 , lng: 4.882052};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: club
+        });
+        var marker = new google.maps.Marker({
+          position: club,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGkPeoepnEc3m2vZYXB_HpmbPcKI9gaTU&callback=initMap">
+    </script>
+
 <?php get_footer(); ?>

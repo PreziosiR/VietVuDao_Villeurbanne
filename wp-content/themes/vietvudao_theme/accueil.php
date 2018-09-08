@@ -9,11 +9,17 @@
 get_header();
 ?>
 
+<style type="text/css">
+  #logo {
+    padding-top: 25px;
+  }
+</style>
+
 <!-- Page Content -->
     <div class="container">
       <div class="row">
-        <div class="col-lg-2 text-center">
-          <img class="d-block w-75" src="/wordpress/wp-content/uploads/2018/03/vvd-logo.png" alt="Second slide">
+        <div id="logo" class="col-lg-2 text-center">
+          <img class="img-fluid" src="/wordpress/wp-content/uploads/2018/03/vvd-logo.png" alt="Second slide">
         </div>
         <div class="col-lg-10 text-center">
           <h1 class="mt-5">Việt vũ Đạo International / Ecole Tân-Lượng</h1>
@@ -68,5 +74,9 @@ get_header();
   $content = apply_filters('the_content', $post->post_content);
   echo $content;
 ?>
+
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<div class="g-ytsubscribe" data-channelid="UC88ezO5aKRdNuqhRK2Fd7Kg" data-layout="full" data-count="hidden"></div>
 
 <?php get_footer(); ?>

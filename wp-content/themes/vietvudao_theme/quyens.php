@@ -9,7 +9,7 @@
 get_header();
 ?>
 
-<div class="container">
+<div class="container pt-5">
   <?php
     $id = get_the_ID();
     $post = get_post($id);

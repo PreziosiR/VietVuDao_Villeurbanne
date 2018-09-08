@@ -50,19 +50,6 @@ if( $ceintures->have_posts() ) :
 endif;
 ?>
 ?>
-  <!-- Custom styles for this template -->
-  <style>
-    body {
-      padding-top: 54px;
-    }
-    @media (min-width: 992px) {
-      body {
-        padding-top: 56px;
-      }
-    }
-
-  </style>
-
   </head>
 
  <script src="vendor/jquery/jquery.min.js"></script>

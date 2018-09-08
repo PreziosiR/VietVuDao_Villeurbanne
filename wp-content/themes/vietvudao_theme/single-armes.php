@@ -47,18 +47,5 @@ if( $armes->have_posts() ) :
   <?php
 endif;
 ?>
-
-  <!-- Custom styles for this template -->
-  <style>
-    body {
-      padding-top: 54px;
-    }
-    @media (min-width: 992px) {
-      body {
-        padding-top: 56px;
-      }
-    }
-
-  </style>
  <?php get_footer(); ?>
 </html>
